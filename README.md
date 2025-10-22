@@ -16,6 +16,37 @@ You can also take a look at [the javadocs here.](http://kirankunigiri.com/Sprint
 ## Installation and Demo
 Just add the .jar from the release section of this page to install Sprint. You can also run the .jar to look at a demo of some quick animations made with Sprint. Download the source if you want to take a look at how the demo was made and learn by example.
 
+### Running the released Sprint.jar
+Use a JDK 8 with JavaFX bundled - for example `https://bell-sw.com/pages/downloads/#jdk-8-lts`
+
+Ensure you're set up to use the correct JDK if you have multiple on your machine:
+
+```bash
+sudo update-alternatives --config java
+There are 4 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                             Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/bellsoft-java8-full-amd64/bin/java   20804623  auto mode
+  1            /usr/lib/jvm/bellsoft-java8-amd64/bin/java        20804622  manual mode
+  2            /usr/lib/jvm/bellsoft-java8-full-amd64/bin/java   20804623  manual mode
+  3            /usr/lib/jvm/java-21-openjdk-amd64/bin/java       2111      manual mode
+  4            /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java    1081      manual mode
+
+```
+Download the JAR from the release page; 
+```bash
+wget https://github.com/kirankunigiri/Sprint-JavaFX-Animation/releases/download/v1.02/Sprint.jar
+```
+Run the demo:
+
+```bash
+# Try this first:
+java -jar Sprint.jar
+# if it fails due to window compositor issues, this should work:
+GDK_BACKEND=x11 LIBGL_ALWAYS_SOFTWARE=1 java -jar Sprint.jar
+```
+
 ## Sprint Guide
 
 With Sprint, you can chain animations together extremely easily.

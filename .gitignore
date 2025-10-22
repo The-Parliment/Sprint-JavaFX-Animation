@@ -42,6 +42,7 @@ EOF
 **/out/
 
 # IDE
-**/.idea/
-**/*.iml
+.idea/
+.idea/workspace.xml
+.iml
 
