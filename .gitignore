@@ -1,1 +1,47 @@
 slate-docs/
+slate-docs/
+# Build outputs
+/out/
+/target/
+/build/
+/dist/
+/bin/
+/*.jar
+
+# IntelliJ / Eclipse / VS Code
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# Generated docs
+**/out/javadoc/
+**/site/
+
+# Temp
+*.log
+hs_err_pid*.log
+sources.txt
+META-INF/
+
+# OS
+.DS_Store
+Thumbs.db
+EOF
+
+# Ignore nested build/IDE artifacts
+**/out/
+**/.idea/
+**/*.iml
+
+# Build outputs
+/target/
+/out/
+**/out/
+
+# IDE
+**/.idea/
+**/*.iml
+
