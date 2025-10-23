@@ -38,13 +38,29 @@ Download the JAR from the release page;
 ```bash
 wget https://github.com/kirankunigiri/Sprint-JavaFX-Animation/releases/download/v1.02/Sprint.jar
 ```
-Run the demo:
+**Run the demo:**
 
 ```bash
 # Try this first:
 java -jar Sprint.jar
 # if it fails due to window compositor issues, this should work:
 GDK_BACKEND=x11 LIBGL_ALWAYS_SOFTWARE=1 java -jar Sprint.jar
+```
+
+### Building and Running from Source
+The project has been enabled to build with Maven.
+Note: Ensure you are running a JDK with JavaFX ver 8 - similar to the bellsoft recommendation earlier.
+
+```bash
+# Clean build
+mvn clean package
+
+# Run Demo
+# Try this first
+java -jar target/sprint-javafx-animation-0.1.0-SNAPSHOT.jar
+
+# If you have window compositor issues, then this should work:
+GDK_BACKEND=x11 LIBGL_ALWAYS_SOFTWARE=1 java -jar target/sprint-javafx-animation-0.1.0-SNAPSHOT.jar
 ```
 
 ## Sprint Guide
